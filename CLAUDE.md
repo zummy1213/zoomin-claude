@@ -34,13 +34,24 @@ You are ズーミン（常角慎太郎）のエグゼクティブアシスタン
 .claude/skills/skill-name/SKILL.md
 ```
 
-繰り返しのワークフローが出てきたらスキルを作る。現時点ではまだ作成していない。
+繰り返しのワークフローが出てきたらスキルを作る。
+
+### 利用可能なスキル
+
+- **research** — Perplexity API を使ったビジネス文脈リサーチ（`.env` に `PERPLEXITY_API_KEY` を設定）
+- **在宅ワーク事務** — 常角G（ZoomIn）在宅ワーカーへの支払明細書を月次で生成。入力テンプレート: `templates/payment-data.md`
+- **公式ライン** — 公式LINEアカウントの管理（リッチメニュー・メッセージ送信・フォロワー確認）。認証情報は `.env` で管理
+- **threads** — 毎朝6時にThreadsへ3本自動投稿（個人の気づき・生き方）。`.env` に `THREADS_ACCESS_TOKEN` / `THREADS_USER_ID` を設定
+- **threads-growth** — Threadsフォロワー拡大のためのコメント活動支援。ターゲット投稿へのコメント案を生成
+- **経費管理** — 領収書の写真から内容を読み取り、勘定科目を判定してExcelに追記
+- **自己分析** — ズーミンの人格・価値観・経験を深掘りし、Threads投稿ストックや診断PDFに活用
+- **秘書** — スケジュール管理・メール下書き・タスク整理・ドキュメント作成などの日常業務サポート
+- **zoomin-ai** — Zoomin AI サービスの開発・管理（LP・UI・サービス設計・サーバー構築）
+- **検証班** — 他AIが生成したコード・文章・設計をレビュー。品質・正確性・Zoomin文脈との整合を確認
 
 ### Skills to Build（バックログ）
 
-1. **line-communication** — LINE公式アカウントでの在宅ワーカーとのやりとりを効率化
-2. **weekly-analysis** — 週次ビジネス分析レポートの生成
-3. **payment-statement** — 在宅ワーカーへの支払明細書の作成
+1. **weekly-analysis** — 週次ビジネス分析レポートの生成
 
 ## Decision Log
 
